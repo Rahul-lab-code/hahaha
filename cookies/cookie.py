@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     theme = request.cookies.get("theme")
-    return "Helloworld"
+    return theme
 
 @app.route('/cookie')
 def setCookie():
